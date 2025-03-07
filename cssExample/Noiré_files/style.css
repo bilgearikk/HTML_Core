@@ -1,0 +1,60 @@
+body {
+    background-color: azure;
+    font-family: Arial, sans-serif;
+    text-align: center;     /* sayfa içeriğini yatayda hizalama */
+}
+
+
+header {
+    display: flex;    /* menu ögelerini yatayda hizaladık*/
+    flex-direction: column;  /*  marka üstte ögeler altta olarak dikeyde hizaladık  */
+    align-items: center;  /* içeriği yatyada ortaladık */
+}
+
+h1 {
+    margin-bottom: 10px; /* başlık ile menü arasında 10px boşluk bıraktık*/
+}
+
+nav ul {
+    list-style: none;  /* liste ögelerinin başındaki noktayı kaldırdık */
+    padding: 0;  /* varsayılan iç boşluğu kadlırdık */
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline; /*  Liste öğelerini satır içi olarak gösterir (varsayılan olarak <li> blok öğedir). */
+}
+
+
+nav ul li a {
+    text-decoration: none;  /* bağlantımızın alltındaki çizgiyi kaldırdık */
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {  /* kullanıcımız mouse ile bağlantı üzerine gelidiğinde uygulanır */
+    color:darkblue;  /* bağlantı rengini mavi yaptık */
+}
+
+
+
+
+article ul {
+    list-style: none; /* Liste noktalarını kaldır */
+    padding: 0;
+}
+
+article ul li a {
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: darkblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+article ul li a:hover {
+    color: rgb(75, 75, 250); /* Üzerine gelince renk değiştir */
+}
+
+
